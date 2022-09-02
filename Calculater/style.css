@@ -1,0 +1,53 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Ymx1ciUyMGJhY2tncm91bmQlMjBkZXNrdG9wc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+     background-repeat: no-repeat;
+    background-size: cover;
+}
+ .box     {
+    max-width: 300px;
+    margin: 30vh auto 20vh auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+}
+#screen {
+    margin: 15px;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: left;
+    align-items: flex-end;
+    border: 2px solid black;
+    width: 6cm;
+}
+
+/* #container {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid#999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
+button {
+    height: 45px;
+    width: 45px;
+    margin: 2%;
+    padding: 0cm;
+    border-radius: 20px;
+    color: black;
+    background-color: rgba(226, 196, 220, 0.37);
+    /* border: 4px solid black; */
+    -webkit-text-stroke-width: thick;
+}
+
+#equal {
+    background-color: rgb(85, 85, 255);
+    color: white;
+}
+
+.button:hover {
+    /* background-color: #323330; */
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+div:nth-child(5){
+    margin-bottom: 0.5em;
+}

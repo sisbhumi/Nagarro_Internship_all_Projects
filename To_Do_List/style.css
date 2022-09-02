@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#myInput{
+    width: 80%;
+    background: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+h3{
+    margin: 10px;
+}
+#center{
+    width: 500px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.work1, .work2{
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 28px;
+    text-shadow: 4px 4px 4px rgb(236, 245, 110); 
+    margin: 0% 25%;
+}
+.task{
+    width: 100vh;
+    padding: 18px;
+    margin: 6px 0;
+    overflow: hidden;
+    text-align: left;
+    float: center;
+    background-color: rgba(0,0,0,.5);
+    color: rgb(7, 7, 7);
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 15px;
+    text-shadow: none;
+}
+
+.task i{
+    color: rgb(0, 0, 0);
+    text-shadow: none;
+    float:right;
+    right: 30em;
+    padding: 10px;
+}
+
+h1{
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 48px;
+    text-shadow: 2px 2px 2px rgb(43, 39, 39);
+}
+body{
+    background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80") ;
+    filter: opacity(0px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+button{
+    width: 10%; height: 3.3em; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236, 240, 8);
+    border-radius: 6px;
+} 

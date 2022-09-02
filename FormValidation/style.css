@@ -1,0 +1,28 @@
+.box{
+    align-items: center;
+    height: 2px;
+    /* background-color: darkcyan; */
+}
+
+body{
+    background-image: url("https://img.freepik.com/free-vector/abstact-hexagon-background-memphis-style_1017-31955.jpg?size=626&ext=jpg&ga=GA1.2.185756411.1658667574");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:lighten;
+    background-color: blueviolet;
+}
+
+form{
+    width:50%;
+    padding: 2%;
+    margin-left: 25%;
+    align-content: center;
+    position: relative;
+    text-shadow: .5ch;
+    /* background-color: chocolate; */
+}
+
+h3{
+    text-align: center;
+    margin-top: 10%;
+}
