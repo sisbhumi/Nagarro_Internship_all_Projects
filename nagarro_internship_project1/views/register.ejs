@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/register.css" />
+    <title>Twitter</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <div id="cancel"><a href="landing">X</a></div>
+        <div class="content">
+            <h1>Create Your Account</h1>
+            <form action="/register" class="namephone" method="POST">
+              <input type="text" name="firstName" placeholder="First Name" autocomplete="off"
+              value="<%= locals.firstName %>" required class="name">
+              <input name="lastName" placeholder="Last Name" autocomplete="off" value="<%= locals.lastName %>"
+              required class="name">
+              <input name="username" placeholder="Username" autocomplete="off" value="<%= locals.username %>"
+              required class="username">
+              <input type="email" name="email" placeholder="Email" autocomplete="off" value="<%= locals.email %>"
+              required id="email">
+              <input type="password" type="password" name="password" placeholder="Password" autocomplete="off"
+              value="<%= locals.password %>" required class="password">
+              <input type="submit" id="submitBtn" value="Sign Up">
+            </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+</html>

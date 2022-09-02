@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <script src="https://kit.fontawesome.com/7caf9c456e.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <title> <%= pageTitle %>  </title>
+    <script>
+        const userLoggedIn = '<%- JSON.stringify(locals.userLoggedIn) %>';
+    </script>
+</head>
+<body>
+    <div class="notificationsList">
+        
+    </div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a class="nav-link twitter-logo" href="/">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="nav-link nl<%= locals.home %>" href="/">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+            </a>
+            <a class="nav-link nl<%= locals.search %>" href="/search">
+                <i class="fas fa-hashtag"></i>
+                <p>Explore</p>
+            </a>
+            <a class="nav-link nl<%= locals.messages %>" href="/messages">
+                <span id="messagesBadge">8</span>
+                <i class="fas fa-envelope"></i>
+                <p>Messages</p>
+            </a>
+            <a class="nav-link nl<%= locals.notifications %>" href="/notifications">
+                <span id="notificationsBadge">8</span>
+                <i class="fas fa-bell"></i>
+                <p>Notifications</p>
+            </a>
+            <a class="nav-link nl<%= locals.profile %>" href="/profile">
+                <i class="fas fa-user"></i>
+                <p>Profile</p>
+            </a>
+            <a class="nav-link nl<%= locals.logout %>" href="/logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <p>Logout</p>
+            </a>
+        </div>
+    </nav>
+    <div class="content-container">
+        <h1 class="page-title"> <%= pageTitle %>  </h1>
+        <%- locals.mainContent %> 
+    </div>
+    <div class="highlights-container">
+        
+        </div>
+    <div class="right-side-container">
+        <div class="widgets__widgetsContainer">
+            <h2 style="color: black;white-space: pre;margin: revert;">What's happening?</h2>
+            <a href="https://twitter.com/intent/tweet?button_hashtag=aunty#shilpashinde&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #LoveCricket</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a href="https://twitter.com/intent/tweet?button_hashtag=BoycottBollywood&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #LoveIndianMusic</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a href="https://twitter.com/intent/tweet?button_hashtag=youngLife&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #LoveIndianFood</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet"><p lang="hi" dir="ltr">Governor of Himachal Pradesh Rajendra Vishwanath Arlekar called on President Droupadi Murmu at Rashtrapati Bhavan <a href="https://t.co/tY2cUKe1D1">pic.twitter.com/tY2cUKe1D1</a></p>&mdash; President of India (@rashtrapatibhvn) <a href="https://twitter.com/rashtrapatibhvn/status/1563446592782614530?ref_src=twsrc%5Etfw">August 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.socket.io/4.1.1/socket.io.min.js" integrity="sha384-cdrFIqe3RasCMNE0jeFG9xJHog/tgOVC1E9Lzve8LQN1g5WUHo0Kvk1mawWjxX7a" crossorigin="anonymous"></script>
+    <script src="/javascript/showNotifications.js"></script>
+    <% locals.jsfiles.forEach(function(file) { %> 
+        <script src="<%= file %> "></script>
+    <% }) %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.js"></script>
+    <script src="/javascript/clientSocket.js"></script>
+</body>
+</html>
+
+

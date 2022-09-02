@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font :14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    background-color: rgb(251, 246, 246);
+  }
+  
+  .container-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    height: 100vh;
+  }
+  
+  .container-l {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 54vw;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .logo-twitter-l {
+    max-width: 300px;
+    min-width: 200px;
+    fill: #fff;
+  }
+  
+  .container-r {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 46vw;
+    padding-left: 50px;
+    background-color: rgb(253, 253, 253);
+  }
+  
+  .logo-twitter-r {
+  transform: translateY(-60px);
+    max-width: 45px;
+    min-width: 45px;
+    fill: rgb(66, 163, 227);
+  }
+  
+  h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: rgb(13, 14, 14);
+  }
+  
+  h2 {
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(15, 16, 16);
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+  }
+
+.btn {
+    max-width: 320px;
+    min-width: 240px;
+    padding: 15px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    margin: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+    margin-top: 60px;
+  }
+  
+  .btn-link{
+    max-width: 320px;
+    min-width: 240px;
+    text-align: center;
+    border-radius: 30px;
+    height: 55px;
+  }
+  #btn-link1 {
+    margin-top: 10px;
+    background-color: rgb(29, 155, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+  }
+  .btn-email{
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .terms-of-service {
+    padding-left: 5px;
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(113, 118, 123);
+    margin:5px  0 0 5px;
+  }
+  
+  .terms-of-service a {
+    color: rgb(29, 155, 240);
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  .terms-of-service a:hover {
+    text-decoration: underline;
+  }
+  
+  h3 {
+    margin-left: 7px;
+    margin-top: 60px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    word-spacing: 1px;
+    color: rgb(14, 14, 14);
+  }
+  #btn-link2{
+    margin-top: 15px;
+    border: 1px solid rgb(113, 118, 123);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .btn-sign-in{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(29, 155, 240);
+    background-color: #00000008;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  
+  
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 40px;
+    padding-top: 10px;
+    background-color: #000;
+  }
+  
+  footer a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-size: 10px;
+    padding: 6px;
+    text-decoration: none;
+    color: rgb(113, 118, 123);
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer p {
+    font-family: sans-serif;
+    font-size: 10px;
+    padding: 6px;
+    color: rgb(113, 118, 123);
+  }
+  
+  @media screen and (max-width: 700px) {
+    main {
+      display: inline;
+    }
+    .container-main {
+      display: inline-block;
+      width: 100vw;
+    }
+    .container-r {
+      width: 100vw;
+      height: 70vh;
+      margin-top: 40px;
+      padding-left: 7%;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    .container-l {
+      width: 100vw;
+      height: 25vh;
+      margin-top: 20px;
+    }
+    .logo-twitter-l {
+      width: 20%;
+    }
+    footer {
+      position: relative;
+    }
+  }
+  
