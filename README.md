@@ -4,5 +4,6 @@
 * Image Slider : https://sisbhumi.github.io/Image_Slider.github.io/
 * Calculator : https://sisbhumi.github.io/Calculator.github.io/
 * Form validation : https://sisbhumi.github.io/Form_Validation.github.io/
+* Toggle : https://sisbhumi.github.io/Toggle.github.io/
 * Twitter Clone: https://tweet-er-clone-project.herokuapp.com/landing
 * E-commerce :https://dream-fashion.herokuapp.com/
